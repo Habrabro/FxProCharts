@@ -3,19 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49AC464F5E289F416E453CE1 /* Pods_FxProCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC771CEC6BCC8A19910188ED /* Pods_FxProCharts.framework */; };
+		84124E5623E0666A0017D2B0 /* PeriodPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84124E5523E066690017D2B0 /* PeriodPickerController.swift */; };
+		84124E5A23E075660017D2B0 /* ChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84124E5923E075660017D2B0 /* ChartView.xib */; };
+		84124E5C23E076E50017D2B0 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84124E5B23E076E50017D2B0 /* ChartView.swift */; };
+		84124E6823E0B8E50017D2B0 /* ChartPeriodPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84124E6723E0B8E50017D2B0 /* ChartPeriodPickerView.xib */; };
+		844FD65B23E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FD65623E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift */; };
+		844FD65C23E05BA100801B00 /* PeriodPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FD65723E05BA100801B00 /* PeriodPickerCollectionViewCell.swift */; };
+		844FD65D23E05BA100801B00 /* PeriodPickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FD65823E05BA100801B00 /* PeriodPickerCollectionViewController.swift */; };
+		844FD66523E05CD000801B00 /* PeriodPickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844FD66423E05CD000801B00 /* PeriodPickerCollectionViewCell.xib */; };
+		844FD66723E0609B00801B00 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FD66623E0609B00801B00 /* UICollectionView+Extensions.swift */; };
 		84FD8AA823E0414F0073FA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AA723E0414F0073FA56 /* AppDelegate.swift */; };
 		84FD8AAA23E0414F0073FA56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AA923E0414F0073FA56 /* SceneDelegate.swift */; };
 		84FD8AAC23E0414F0073FA56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AAB23E0414F0073FA56 /* ViewController.swift */; };
 		84FD8AAF23E0414F0073FA56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD8AAD23E0414F0073FA56 /* Main.storyboard */; };
 		84FD8AB123E041500073FA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FD8AB023E041500073FA56 /* Assets.xcassets */; };
 		84FD8AB423E041500073FA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD8AB223E041500073FA56 /* LaunchScreen.storyboard */; };
+		84FD8AC023E0437B0073FA56 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8ABC23E0437B0073FA56 /* Coordinating.swift */; };
+		84FD8AC123E0437B0073FA56 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8ABD23E0437B0073FA56 /* NavigationCoordinator.swift */; };
+		84FD8AC223E0437B0073FA56 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8ABE23E0437B0073FA56 /* Coordinator.swift */; };
+		84FD8AC323E0437B0073FA56 /* UIKit-CoordinatingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8ABF23E0437B0073FA56 /* UIKit-CoordinatingExtensions.swift */; };
+		84FD8AC823E043A60073FA56 /* TutorialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AC523E043A50073FA56 /* TutorialCoordinator.swift */; };
+		84FD8AC923E043A60073FA56 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AC623E043A50073FA56 /* ApplicationCoordinator.swift */; };
+		84FD8ACD23E04B920073FA56 /* CornerRadiusCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8ACC23E04B920073FA56 /* CornerRadiusCustomizable.swift */; };
+		84FD8ACF23E04BE30073FA56 /* ChartPeriodPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8ACE23E04BE30073FA56 /* ChartPeriodPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39A00CA6285F68C2E5644CBF /* Pods-FxProCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FxProCharts.release.xcconfig"; path = "Target Support Files/Pods-FxProCharts/Pods-FxProCharts.release.xcconfig"; sourceTree = "<group>"; };
+		84124E5523E066690017D2B0 /* PeriodPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodPickerController.swift; sourceTree = "<group>"; };
+		84124E5923E075660017D2B0 /* ChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartView.xib; sourceTree = "<group>"; };
+		84124E5B23E076E50017D2B0 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		84124E6723E0B8E50017D2B0 /* ChartPeriodPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartPeriodPickerView.xib; sourceTree = "<group>"; };
+		844FD65623E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodPickerCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		844FD65723E05BA100801B00 /* PeriodPickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodPickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		844FD65823E05BA100801B00 /* PeriodPickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodPickerCollectionViewController.swift; sourceTree = "<group>"; };
+		844FD66423E05CD000801B00 /* PeriodPickerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodPickerCollectionViewCell.xib; sourceTree = "<group>"; };
+		844FD66623E0609B00801B00 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		84FD8AA423E0414F0073FA56 /* FxProCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FxProCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD8AA723E0414F0073FA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FD8AA923E0414F0073FA56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +52,16 @@
 		84FD8AB023E041500073FA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FD8AB323E041500073FA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FD8AB523E041500073FA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FD8ABC23E0437B0073FA56 /* Coordinating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
+		84FD8ABD23E0437B0073FA56 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		84FD8ABE23E0437B0073FA56 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		84FD8ABF23E0437B0073FA56 /* UIKit-CoordinatingExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit-CoordinatingExtensions.swift"; sourceTree = "<group>"; };
+		84FD8AC523E043A50073FA56 /* TutorialCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCoordinator.swift; sourceTree = "<group>"; };
+		84FD8AC623E043A50073FA56 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		84FD8ACC23E04B920073FA56 /* CornerRadiusCustomizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusCustomizable.swift; sourceTree = "<group>"; };
+		84FD8ACE23E04BE30073FA56 /* ChartPeriodPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPeriodPickerView.swift; sourceTree = "<group>"; };
+		AC771CEC6BCC8A19910188ED /* Pods_FxProCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FxProCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBF57F1A42ED31F1BA767C1 /* Pods-FxProCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FxProCharts.debug.xcconfig"; path = "Target Support Files/Pods-FxProCharts/Pods-FxProCharts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49AC464F5E289F416E453CE1 /* Pods_FxProCharts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844FD65523E05BA100801B00 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				844FD66623E0609B00801B00 /* UICollectionView+Extensions.swift */,
+				844FD65623E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift */,
+				844FD65723E05BA100801B00 /* PeriodPickerCollectionViewCell.swift */,
+				844FD65823E05BA100801B00 /* PeriodPickerCollectionViewController.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
+		844FD66023E05BAC00801B00 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84FD8ACC23E04B920073FA56 /* CornerRadiusCustomizable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		844FD66123E05BBE00801B00 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84124E5B23E076E50017D2B0 /* ChartView.swift */,
+				84FD8ACE23E04BE30073FA56 /* ChartPeriodPickerView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		844FD66223E05BD300801B00 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84FD8AAB23E0414F0073FA56 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		844FD66323E05CB100801B00 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				84124E5923E075660017D2B0 /* ChartView.xib */,
+				84124E6723E0B8E50017D2B0 /* ChartPeriodPickerView.xib */,
+				844FD66423E05CD000801B00 /* PeriodPickerCollectionViewCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		84FD8A9B23E0414F0073FA56 = {
 			isa = PBXGroup;
 			children = (
 				84FD8AA623E0414F0073FA56 /* FxProCharts */,
 				84FD8AA523E0414F0073FA56 /* Products */,
+				D6DB577CD73B3F1FBCFD6820 /* Pods */,
+				981ABD4A47DD7F362EE250F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +143,59 @@
 		84FD8AA623E0414F0073FA56 /* FxProCharts */ = {
 			isa = PBXGroup;
 			children = (
+				844FD66023E05BAC00801B00 /* Protocols */,
+				844FD66123E05BBE00801B00 /* UI */,
+				844FD65523E05BA100801B00 /* Collection View */,
+				844FD66323E05CB100801B00 /* XIBs */,
+				844FD66223E05BD300801B00 /* ViewControllers */,
 				84FD8AA723E0414F0073FA56 /* AppDelegate.swift */,
 				84FD8AA923E0414F0073FA56 /* SceneDelegate.swift */,
-				84FD8AAB23E0414F0073FA56 /* ViewController.swift */,
 				84FD8AAD23E0414F0073FA56 /* Main.storyboard */,
 				84FD8AB023E041500073FA56 /* Assets.xcassets */,
 				84FD8AB223E041500073FA56 /* LaunchScreen.storyboard */,
 				84FD8AB523E041500073FA56 /* Info.plist */,
+				84FD8AC423E043A50073FA56 /* Coordinators */,
+				84FD8ABB23E0437B0073FA56 /* Coordinator */,
+				84124E5523E066690017D2B0 /* PeriodPickerController.swift */,
 			);
 			path = FxProCharts;
+			sourceTree = "<group>";
+		};
+		84FD8ABB23E0437B0073FA56 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				84FD8ABC23E0437B0073FA56 /* Coordinating.swift */,
+				84FD8ABD23E0437B0073FA56 /* NavigationCoordinator.swift */,
+				84FD8ABE23E0437B0073FA56 /* Coordinator.swift */,
+				84FD8ABF23E0437B0073FA56 /* UIKit-CoordinatingExtensions.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		84FD8AC423E043A50073FA56 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				84FD8AC623E043A50073FA56 /* ApplicationCoordinator.swift */,
+				84FD8AC523E043A50073FA56 /* TutorialCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		981ABD4A47DD7F362EE250F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC771CEC6BCC8A19910188ED /* Pods_FxProCharts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6DB577CD73B3F1FBCFD6820 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDBF57F1A42ED31F1BA767C1 /* Pods-FxProCharts.debug.xcconfig */,
+				39A00CA6285F68C2E5644CBF /* Pods-FxProCharts.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84FD8AB823E041500073FA56 /* Build configuration list for PBXNativeTarget "FxProCharts" */;
 			buildPhases = (
+				BB484B3F823737E7481D98BF /* [CP] Check Pods Manifest.lock */,
 				84FD8AA023E0414F0073FA56 /* Sources */,
 				84FD8AA123E0414F0073FA56 /* Frameworks */,
 				84FD8AA223E0414F0073FA56 /* Resources */,
+				BDA0F41F8D1F46F29C0EEBEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,20 +259,79 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FD8AB423E041500073FA56 /* LaunchScreen.storyboard in Resources */,
+				84124E6823E0B8E50017D2B0 /* ChartPeriodPickerView.xib in Resources */,
 				84FD8AB123E041500073FA56 /* Assets.xcassets in Resources */,
 				84FD8AAF23E0414F0073FA56 /* Main.storyboard in Resources */,
+				84124E5A23E075660017D2B0 /* ChartView.xib in Resources */,
+				844FD66523E05CD000801B00 /* PeriodPickerCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB484B3F823737E7481D98BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FxProCharts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDA0F41F8D1F46F29C0EEBEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FxProCharts/Pods-FxProCharts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FxProCharts/Pods-FxProCharts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FxProCharts/Pods-FxProCharts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84FD8AA023E0414F0073FA56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FD8ACD23E04B920073FA56 /* CornerRadiusCustomizable.swift in Sources */,
+				844FD65C23E05BA100801B00 /* PeriodPickerCollectionViewCell.swift in Sources */,
+				844FD66723E0609B00801B00 /* UICollectionView+Extensions.swift in Sources */,
+				84FD8AC323E0437B0073FA56 /* UIKit-CoordinatingExtensions.swift in Sources */,
 				84FD8AAC23E0414F0073FA56 /* ViewController.swift in Sources */,
+				844FD65D23E05BA100801B00 /* PeriodPickerCollectionViewController.swift in Sources */,
+				84FD8ACF23E04BE30073FA56 /* ChartPeriodPickerView.swift in Sources */,
+				844FD65B23E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift in Sources */,
 				84FD8AA823E0414F0073FA56 /* AppDelegate.swift in Sources */,
+				84FD8AC223E0437B0073FA56 /* Coordinator.swift in Sources */,
+				84124E5C23E076E50017D2B0 /* ChartView.swift in Sources */,
+				84FD8AC823E043A60073FA56 /* TutorialCoordinator.swift in Sources */,
+				84FD8AC923E043A60073FA56 /* ApplicationCoordinator.swift in Sources */,
+				84124E5623E0666A0017D2B0 /* PeriodPickerController.swift in Sources */,
+				84FD8AC023E0437B0073FA56 /* Coordinating.swift in Sources */,
+				84FD8AC123E0437B0073FA56 /* NavigationCoordinator.swift in Sources */,
 				84FD8AAA23E0414F0073FA56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +474,7 @@
 		};
 		84FD8AB923E041500073FA56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDBF57F1A42ED31F1BA767C1 /* Pods-FxProCharts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +493,7 @@
 		};
 		84FD8ABA23E041500073FA56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A00CA6285F68C2E5644CBF /* Pods-FxProCharts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
