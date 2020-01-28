@@ -1,0 +1,38 @@
+PODS:
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - CollectionAndTableViewCompatible (0.2.2)
+  - IQKeyboardManagerSwift (6.5.5)
+  - LightweightCharts (1.2.1)
+
+DEPENDENCIES:
+  - Charts
+  - CollectionAndTableViewCompatible
+  - IQKeyboardManagerSwift
+  - LightweightCharts (from `https://github.com/tradingview/LightweightChartsIOS.git`)
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - CollectionAndTableViewCompatible
+    - IQKeyboardManagerSwift
+
+EXTERNAL SOURCES:
+  LightweightCharts:
+    :git: https://github.com/tradingview/LightweightChartsIOS.git
+
+CHECKOUT OPTIONS:
+  LightweightCharts:
+    :commit: d1975fbf4dcfff0008f5549d5af98f668490f7d5
+    :git: https://github.com/tradingview/LightweightChartsIOS.git
+
+SPEC CHECKSUMS:
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  CollectionAndTableViewCompatible: 10a37e76c29faa193595f7d345e4353473e4ce92
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  LightweightCharts: 4a0a5bfa5a6db91c1b0afdb670deffd7e5c91aac
+
+PODFILE CHECKSUM: a494d8b20f3a329059c20602ddad02955e90f346
+
+COCOAPODS: 1.8.4

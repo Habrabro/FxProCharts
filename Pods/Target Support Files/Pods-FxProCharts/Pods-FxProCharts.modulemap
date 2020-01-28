@@ -1,0 +1,6 @@
+framework module Pods_FxProCharts {
+  umbrella header "Pods-FxProCharts-umbrella.h"
+
+  export *
+  module * { export * }
+}
