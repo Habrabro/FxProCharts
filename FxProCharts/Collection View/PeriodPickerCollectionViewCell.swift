@@ -13,7 +13,7 @@ class PeriodPickerCollectionViewCell: UICollectionViewCell, Configurable {
 
     // MARK: Constants
     
-    static let DEFAULT_CELL_SIZE = CGSize(width: 10, height: 10)
+    static let DEFAULT_CELL_SIZE = CGSize(width: 40, height: 40)
     
     // MARK: Outlets
     
@@ -38,6 +38,10 @@ class PeriodPickerCollectionViewCell: UICollectionViewCell, Configurable {
         self.model = model
         
         titleLabel.text = model.title
+        cellSize.width = titleLabel.frame.size.width + 10
+    }
+    @IBAction func hgf(_ sender: Any) {
+        
     }
     
     func setSize(to size: CGSize) {

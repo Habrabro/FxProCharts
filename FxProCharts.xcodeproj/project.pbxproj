@@ -12,14 +12,18 @@
 		84124E5A23E075660017D2B0 /* ChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84124E5923E075660017D2B0 /* ChartView.xib */; };
 		84124E5C23E076E50017D2B0 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84124E5B23E076E50017D2B0 /* ChartView.swift */; };
 		84124E6823E0B8E50017D2B0 /* ChartPeriodPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84124E6723E0B8E50017D2B0 /* ChartPeriodPickerView.xib */; };
+		8419856523E22EF600FC2072 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419856423E22EF600FC2072 /* Point.swift */; };
+		8419856823E22F4E00FC2072 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419856723E22F4D00FC2072 /* DataProvider.swift */; };
 		844FD65B23E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FD65623E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift */; };
 		844FD65C23E05BA100801B00 /* PeriodPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FD65723E05BA100801B00 /* PeriodPickerCollectionViewCell.swift */; };
-		844FD65D23E05BA100801B00 /* PeriodPickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FD65823E05BA100801B00 /* PeriodPickerCollectionViewController.swift */; };
+		844FD65D23E05BA100801B00 /* PeriodPickerCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FD65823E05BA100801B00 /* PeriodPickerCollectionViewDataSource.swift */; };
 		844FD66523E05CD000801B00 /* PeriodPickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844FD66423E05CD000801B00 /* PeriodPickerCollectionViewCell.xib */; };
 		844FD66723E0609B00801B00 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FD66623E0609B00801B00 /* UICollectionView+Extensions.swift */; };
+		84ACA5D623E20C73007111B9 /* DateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACA5D523E20C73007111B9 /* DateValueFormatter.swift */; };
+		84F3DDA323E3561E009AEEAE /* PeriodPickerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3DDA223E3561E009AEEAE /* PeriodPickerContainer.swift */; };
 		84FD8AA823E0414F0073FA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AA723E0414F0073FA56 /* AppDelegate.swift */; };
 		84FD8AAA23E0414F0073FA56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AA923E0414F0073FA56 /* SceneDelegate.swift */; };
-		84FD8AAC23E0414F0073FA56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AAB23E0414F0073FA56 /* ViewController.swift */; };
+		84FD8AAC23E0414F0073FA56 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AAB23E0414F0073FA56 /* ChartsViewController.swift */; };
 		84FD8AAF23E0414F0073FA56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD8AAD23E0414F0073FA56 /* Main.storyboard */; };
 		84FD8AB123E041500073FA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FD8AB023E041500073FA56 /* Assets.xcassets */; };
 		84FD8AB423E041500073FA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD8AB223E041500073FA56 /* LaunchScreen.storyboard */; };
@@ -31,6 +35,12 @@
 		84FD8AC923E043A60073FA56 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8AC623E043A50073FA56 /* ApplicationCoordinator.swift */; };
 		84FD8ACD23E04B920073FA56 /* CornerRadiusCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8ACC23E04B920073FA56 /* CornerRadiusCustomizable.swift */; };
 		84FD8ACF23E04BE30073FA56 /* ChartPeriodPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD8ACE23E04BE30073FA56 /* ChartPeriodPickerView.swift */; };
+		84FE624223E2E39D00327D90 /* LineChartStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE624123E2E39D00327D90 /* LineChartStyler.swift */; };
+		84FE624423E30FEC00327D90 /* LightweightChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE624323E30FEC00327D90 /* LightweightChartView.swift */; };
+		84FE624623E3104B00327D90 /* LightweightChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE624523E3104B00327D90 /* LightweightChartView.xib */; };
+		84FE624823E313BF00327D90 /* LightweightChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE624723E313BF00327D90 /* LightweightChartViewController.swift */; };
+		84FF40FD23E1C6FE00DB2839 /* PeriodPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FF40FC23E1C6FE00DB2839 /* PeriodPickerViewDelegate.swift */; };
+		84FF410323E1D1B200DB2839 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FF410223E1D1B200DB2839 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,15 +49,19 @@
 		84124E5923E075660017D2B0 /* ChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartView.xib; sourceTree = "<group>"; };
 		84124E5B23E076E50017D2B0 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		84124E6723E0B8E50017D2B0 /* ChartPeriodPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartPeriodPickerView.xib; sourceTree = "<group>"; };
+		8419856423E22EF600FC2072 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		8419856723E22F4D00FC2072 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		844FD65623E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodPickerCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		844FD65723E05BA100801B00 /* PeriodPickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodPickerCollectionViewCell.swift; sourceTree = "<group>"; };
-		844FD65823E05BA100801B00 /* PeriodPickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodPickerCollectionViewController.swift; sourceTree = "<group>"; };
+		844FD65823E05BA100801B00 /* PeriodPickerCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodPickerCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		844FD66423E05CD000801B00 /* PeriodPickerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodPickerCollectionViewCell.xib; sourceTree = "<group>"; };
 		844FD66623E0609B00801B00 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		84ACA5D523E20C73007111B9 /* DateValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateValueFormatter.swift; sourceTree = "<group>"; };
+		84F3DDA223E3561E009AEEAE /* PeriodPickerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodPickerContainer.swift; sourceTree = "<group>"; };
 		84FD8AA423E0414F0073FA56 /* FxProCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FxProCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD8AA723E0414F0073FA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FD8AA923E0414F0073FA56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84FD8AAB23E0414F0073FA56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84FD8AAB23E0414F0073FA56 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		84FD8AAE23E0414F0073FA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84FD8AB023E041500073FA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FD8AB323E041500073FA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +74,12 @@
 		84FD8AC623E043A50073FA56 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		84FD8ACC23E04B920073FA56 /* CornerRadiusCustomizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusCustomizable.swift; sourceTree = "<group>"; };
 		84FD8ACE23E04BE30073FA56 /* ChartPeriodPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPeriodPickerView.swift; sourceTree = "<group>"; };
+		84FE624123E2E39D00327D90 /* LineChartStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartStyler.swift; sourceTree = "<group>"; };
+		84FE624323E30FEC00327D90 /* LightweightChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightChartView.swift; sourceTree = "<group>"; };
+		84FE624523E3104B00327D90 /* LightweightChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightweightChartView.xib; sourceTree = "<group>"; };
+		84FE624723E313BF00327D90 /* LightweightChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightChartViewController.swift; sourceTree = "<group>"; };
+		84FF40FC23E1C6FE00DB2839 /* PeriodPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodPickerViewDelegate.swift; sourceTree = "<group>"; };
+		84FF410223E1D1B200DB2839 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		AC771CEC6BCC8A19910188ED /* Pods_FxProCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FxProCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBF57F1A42ED31F1BA767C1 /* Pods-FxProCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FxProCharts.debug.xcconfig"; path = "Target Support Files/Pods-FxProCharts/Pods-FxProCharts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,13 +96,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8419856323E22E6F00FC2072 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8419856423E22EF600FC2072 /* Point.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8419856623E22F3E00FC2072 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				8419856723E22F4D00FC2072 /* DataProvider.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
 		844FD65523E05BA100801B00 /* Collection View */ = {
 			isa = PBXGroup;
 			children = (
 				844FD66623E0609B00801B00 /* UICollectionView+Extensions.swift */,
 				844FD65623E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift */,
 				844FD65723E05BA100801B00 /* PeriodPickerCollectionViewCell.swift */,
-				844FD65823E05BA100801B00 /* PeriodPickerCollectionViewController.swift */,
+				844FD65823E05BA100801B00 /* PeriodPickerCollectionViewDataSource.swift */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
@@ -98,8 +134,13 @@
 		844FD66123E05BBE00801B00 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				84FE624323E30FEC00327D90 /* LightweightChartView.swift */,
 				84124E5B23E076E50017D2B0 /* ChartView.swift */,
+				84FE624123E2E39D00327D90 /* LineChartStyler.swift */,
 				84FD8ACE23E04BE30073FA56 /* ChartPeriodPickerView.swift */,
+				84FF40FC23E1C6FE00DB2839 /* PeriodPickerViewDelegate.swift */,
+				84ACA5D523E20C73007111B9 /* DateValueFormatter.swift */,
+				84F3DDA223E3561E009AEEAE /* PeriodPickerContainer.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -107,7 +148,8 @@
 		844FD66223E05BD300801B00 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				84FD8AAB23E0414F0073FA56 /* ViewController.swift */,
+				84FD8AAB23E0414F0073FA56 /* ChartsViewController.swift */,
+				84FE624723E313BF00327D90 /* LightweightChartViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -118,6 +160,7 @@
 				84124E5923E075660017D2B0 /* ChartView.xib */,
 				84124E6723E0B8E50017D2B0 /* ChartPeriodPickerView.xib */,
 				844FD66423E05CD000801B00 /* PeriodPickerCollectionViewCell.xib */,
+				84FE624523E3104B00327D90 /* LightweightChartView.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -143,6 +186,9 @@
 		84FD8AA623E0414F0073FA56 /* FxProCharts */ = {
 			isa = PBXGroup;
 			children = (
+				8419856623E22F3E00FC2072 /* Middleware */,
+				8419856323E22E6F00FC2072 /* Model */,
+				84FF410123E1D19F00DB2839 /* Extensions */,
 				844FD66023E05BAC00801B00 /* Protocols */,
 				844FD66123E05BBE00801B00 /* UI */,
 				844FD65523E05BA100801B00 /* Collection View */,
@@ -179,6 +225,14 @@
 				84FD8AC523E043A50073FA56 /* TutorialCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		84FF410123E1D19F00DB2839 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84FF410223E1D1B200DB2839 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		981ABD4A47DD7F362EE250F2 /* Frameworks */ = {
@@ -258,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FE624623E3104B00327D90 /* LightweightChartView.xib in Resources */,
 				84FD8AB423E041500073FA56 /* LaunchScreen.storyboard in Resources */,
 				84124E6823E0B8E50017D2B0 /* ChartPeriodPickerView.xib in Resources */,
 				84FD8AB123E041500073FA56 /* Assets.xcassets in Resources */,
@@ -317,20 +372,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FD8ACD23E04B920073FA56 /* CornerRadiusCustomizable.swift in Sources */,
+				84FF410323E1D1B200DB2839 /* UIColor+Extension.swift in Sources */,
+				84FE624423E30FEC00327D90 /* LightweightChartView.swift in Sources */,
 				844FD65C23E05BA100801B00 /* PeriodPickerCollectionViewCell.swift in Sources */,
+				84F3DDA323E3561E009AEEAE /* PeriodPickerContainer.swift in Sources */,
 				844FD66723E0609B00801B00 /* UICollectionView+Extensions.swift in Sources */,
 				84FD8AC323E0437B0073FA56 /* UIKit-CoordinatingExtensions.swift in Sources */,
-				84FD8AAC23E0414F0073FA56 /* ViewController.swift in Sources */,
-				844FD65D23E05BA100801B00 /* PeriodPickerCollectionViewController.swift in Sources */,
+				84FD8AAC23E0414F0073FA56 /* ChartsViewController.swift in Sources */,
+				84ACA5D623E20C73007111B9 /* DateValueFormatter.swift in Sources */,
+				844FD65D23E05BA100801B00 /* PeriodPickerCollectionViewDataSource.swift in Sources */,
+				84FF40FD23E1C6FE00DB2839 /* PeriodPickerViewDelegate.swift in Sources */,
 				84FD8ACF23E04BE30073FA56 /* ChartPeriodPickerView.swift in Sources */,
 				844FD65B23E05BA100801B00 /* PeriodPickerCollectionViewCellModel.swift in Sources */,
+				8419856523E22EF600FC2072 /* Point.swift in Sources */,
 				84FD8AA823E0414F0073FA56 /* AppDelegate.swift in Sources */,
 				84FD8AC223E0437B0073FA56 /* Coordinator.swift in Sources */,
 				84124E5C23E076E50017D2B0 /* ChartView.swift in Sources */,
 				84FD8AC823E043A60073FA56 /* TutorialCoordinator.swift in Sources */,
+				8419856823E22F4E00FC2072 /* DataProvider.swift in Sources */,
 				84FD8AC923E043A60073FA56 /* ApplicationCoordinator.swift in Sources */,
 				84124E5623E0666A0017D2B0 /* PeriodPickerController.swift in Sources */,
+				84FE624823E313BF00327D90 /* LightweightChartViewController.swift in Sources */,
 				84FD8AC023E0437B0073FA56 /* Coordinating.swift in Sources */,
+				84FE624223E2E39D00327D90 /* LineChartStyler.swift in Sources */,
 				84FD8AC123E0437B0073FA56 /* NavigationCoordinator.swift in Sources */,
 				84FD8AAA23E0414F0073FA56 /* SceneDelegate.swift in Sources */,
 			);

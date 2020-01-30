@@ -20,11 +20,13 @@ class PeriodPickerCollectionViewCellModel: CollectionViewCompatible {
     }
     
     var title: String
+    var period: Periods
     
     // MARK: Init
     
-    init(title: String) {
-        self.title = title
+    init(period: Periods) {
+        self.period = period
+        self.title = period.rawValue
     }
     
     // MARK: Public methods
@@ -32,7 +34,7 @@ class PeriodPickerCollectionViewCellModel: CollectionViewCompatible {
     func cellForCollectionView(collectionView: UICollectionView, atIndexPath indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PeriodPickerCollectionViewCell
         cell.configure(withModel: self)
-        cell.setSize(to: collectionView.frame.size)
+//        cell.setSize(to: collectionView.frame.size)
         
         return cell
     }

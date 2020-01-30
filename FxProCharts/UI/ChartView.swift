@@ -7,20 +7,13 @@
 //
 
 import UIKit
+import Charts
 
 class ChartView: UIView {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var chartViewPeriodPicker: ChartPeriodPickerView!
-    
-    var data: [PeriodPickerCollectionViewCellModel] = [
-        PeriodPickerCollectionViewCellModel(title: "1 M"),
-        PeriodPickerCollectionViewCellModel(title: "1 M"),
-        PeriodPickerCollectionViewCellModel(title: "1 M"),
-        PeriodPickerCollectionViewCellModel(title: "1 M"),
-        PeriodPickerCollectionViewCellModel(title: "1 M"),
-        PeriodPickerCollectionViewCellModel(title: "1 M"),
-    ]
+    @IBOutlet weak var lineChartView: LineChartView!
     
     // MARK: Initializers
     
@@ -41,8 +34,38 @@ class ChartView: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    
+        chartViewPeriodPicker.delegate = self
         
-        chartViewPeriodPicker.configureWith(data: data)
+        let values = DataProvider.shared.data!.map { ChartDataEntry(x: $0.x, y: $0.y) }
+        setData(values)
+        
+        let lineChartStyler = LineChartStyler()
+        lineChartStyler.style(lineChartView)
+        setRange(to: Periods.oneMinute)
+    }
+    
+    // Private methods
+    
+    private func setData(_ data: [ChartDataEntry]) {
+        let dataSet = LineChartDataSet(entries: data, label: "dataset")
+        lineChartView.data = LineChartData(dataSet: dataSet)
+    }
+    
+    private func setRange(to period: Periods) {
+        let now = Date().timeIntervalSince1970
+        let interval = period.timeInterval
+        lineChartView.resetViewPortOffsets()
+        lineChartView.moveViewToX(now - interval)
+        lineChartView.setVisibleXRangeMaximum(interval)
+        
+    }
+}
+
+extension ChartView: PeriodPickerViewDelegate {
+    
+    func periodDidSelected(period: Periods) {
+        setRange(to: period)
     }
     
 }

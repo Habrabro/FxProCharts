@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LightweightChartView" customModule="FxProCharts" customModuleProvider="target">
+            <connections>
+                <outlet property="chart" destination="p5K-mE-2Rs" id="Z0W-MO-vDA"/>
+                <outlet property="contentView" destination="Nxn-C0-Gb2" id="IS8-3F-nKn"/>
+                <outlet property="periodPicker" destination="e7E-JL-GyC" id="KBO-kM-hYv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Nxn-C0-Gb2">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="523"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7E-JL-GyC" userLabel="Period Picker" customClass="ChartPeriodPickerView" customModule="FxProCharts" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="239" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Lf3-Hd-yq2"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEZ-Mi-92B" userLabel="Info Button">
+                    <rect key="frame" x="256" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CLi-OA-LTJ"/>
+                        <constraint firstAttribute="width" constant="40" id="sr1-CL-7LI"/>
+                    </constraints>
+                    <state key="normal" image="InfoIcon"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5K-mE-2Rs" userLabel="Lightweight Chart View" customClass="LightweightCharts" customModule="LightweightCharts">
+                    <rect key="frame" x="0.0" y="64" width="311" height="459"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="p5K-mE-2Rs" firstAttribute="leading" secondItem="Nxn-C0-Gb2" secondAttribute="leading" id="75B-fJ-Svp"/>
+                <constraint firstAttribute="trailing" secondItem="p5K-mE-2Rs" secondAttribute="trailing" id="8nh-EU-UiS"/>
+                <constraint firstItem="e7E-JL-GyC" firstAttribute="top" secondItem="Nxn-C0-Gb2" secondAttribute="top" id="U9L-fF-aDp"/>
+                <constraint firstItem="p5K-mE-2Rs" firstAttribute="top" secondItem="e7E-JL-GyC" secondAttribute="bottom" constant="24" id="mQc-GW-UQO"/>
+                <constraint firstItem="hEZ-Mi-92B" firstAttribute="leading" secondItem="e7E-JL-GyC" secondAttribute="trailing" constant="17" id="oM9-4t-R3h"/>
+                <constraint firstItem="e7E-JL-GyC" firstAttribute="leading" secondItem="Nxn-C0-Gb2" secondAttribute="leading" id="qL9-Cu-U3d"/>
+                <constraint firstAttribute="bottom" secondItem="p5K-mE-2Rs" secondAttribute="bottom" id="svM-8Z-AvV"/>
+                <constraint firstAttribute="trailing" secondItem="hEZ-Mi-92B" secondAttribute="trailing" constant="15" id="t1m-4D-6yv"/>
+                <constraint firstItem="hEZ-Mi-92B" firstAttribute="centerY" secondItem="e7E-JL-GyC" secondAttribute="centerY" id="yx6-hT-MXf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="H5t-Zp-kid"/>
+            <point key="canvasLocation" x="345.6521739130435" y="672.96195652173924"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="InfoIcon" width="23" height="23"/>
+    </resources>
+</document>
