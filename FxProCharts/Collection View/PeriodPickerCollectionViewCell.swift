@@ -38,10 +38,7 @@ class PeriodPickerCollectionViewCell: UICollectionViewCell, Configurable {
         self.model = model
         
         titleLabel.text = model.title
-        cellSize.width = titleLabel.frame.size.width + 10
-    }
-    @IBAction func hgf(_ sender: Any) {
-        
+//        cellSize.width = titleLabel.frame.size.width + 10
     }
     
     func setSize(to size: CGSize) {

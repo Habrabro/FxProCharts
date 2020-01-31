@@ -29,7 +29,7 @@ class DataProvider {
         let to = now
         
         let values = stride(from: from, to: to, by: INTERVAL).map { (x) -> Point in
-            let y = Double.random(in: 0...1) + 1
+            let y = Double.random(in: 0...1) + 1.11111
             return Point(x: x, y: y)
         }
         

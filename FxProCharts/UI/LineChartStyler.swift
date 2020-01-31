@@ -43,7 +43,7 @@ class LineChartStyler {
         dataSet.drawValuesEnabled = false
         dataSet.lineWidth = 2.0
         dataSet.highlightEnabled = false
-        dataSet.colors = [UIColor.blue]
+        dataSet.colors = [UIColor.blue!]
     }
     
 }

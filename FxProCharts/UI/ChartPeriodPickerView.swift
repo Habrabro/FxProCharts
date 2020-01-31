@@ -11,17 +11,17 @@ import CollectionAndTableViewCompatible
 
 enum Periods: String, RawRepresentable {
     
-    case oneMinute = "1 M"
-    case fiveMinutes = "5 M"
-    case fifteenMinutes = "15 M"
-    case thirtyMinutes = "30 M"
-    case oneHour = "1 H"
-    case twoHours = "2 H"
-    case fourHours = "4 H"
-    case twelveHours = "12 H"
-    case oneDay = "1 D"
-    case oneWeek = "1 W"
-    case oneMonth = "1 MN"
+    case oneMinute = "1M"
+    case fiveMinutes = "5M"
+    case fifteenMinutes = "15M"
+    case thirtyMinutes = "30M"
+    case oneHour = "1H"
+    case twoHours = "2H"
+    case fourHours = "4H"
+    case twelveHours = "12H"
+    case oneDay = "1D"
+    case oneWeek = "1W"
+    case oneMonth = "1MN"
 }
 
 extension Periods {

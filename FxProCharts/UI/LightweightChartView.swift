@@ -11,6 +11,61 @@ import LightweightCharts
 
 class LightweightChartView: UIView {
     
+    enum SourceType: CaseIterable {
+        case js
+        case native
+        
+        var title: String {
+            switch self {
+            case .js:
+                return "JavaScript"
+            case .native:
+                return "Swift"
+            }
+        }
+    }
+    
+    enum FormatterType {
+        case dollar
+        case pound
+        case custom(title: String, sign: String, digitsAfterDot: Int)
+        
+        var formatterString: String {
+            switch self {
+            case .dollar: return "function(price) { return '$' + price.toFixed(2); }"
+            case .pound: return "function(price) { return '\u{00A3}' + price.toFixed(2); }"
+            case let .custom(_, sign, digitsAfterDot): return "function(price) { return '\(sign)' + price.toFixed(\(digitsAfterDot)); }"
+            }
+        }
+        
+        var formatterClosure: (BarPrice) -> String {
+            switch self {
+            case .dollar: return { "🦄$\(($0 * 100).rounded() / 100)" }
+            case .pound: return { "☁️\u{00A3}\(($0 * 100).rounded() / 100)" }
+            default: return { _ in "-_-" }
+            }
+        }
+        
+        var title: String {
+            switch self {
+            case .dollar: return "Dollar"
+            case .pound: return "Pound"
+            case let .custom(title, _, _): return title
+            }
+        }
+    }
+    
+    private var selectedFormat: FormatterType = .dollar {
+        didSet {
+            updateFormatter()
+        }
+    }
+    private var selectedSource: SourceType = .js {
+        didSet {
+            updateFormatter()
+        }
+    }
+    
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var periodPicker: ChartPeriodPickerView!
     @IBOutlet weak var chart: LightweightCharts!
@@ -24,7 +79,7 @@ class LightweightChartView: UIView {
         didSet {
             if let displayData = displayingData {
                 series.setData(data: displayData)
-                
+                chart.timeScale().fitContent()
             }
         }
     }
@@ -54,10 +109,25 @@ class LightweightChartView: UIView {
         periodPicker.delegate = self
         
         let options = ChartOptions(
-            timeScale: TimeScaleOptions(timeVisible: true, secondsVisible: false)
+            layout: LayoutOptions(fontSize: 13),
+            priceScale: PriceScaleOptions(
+                borderVisible: false,
+                entireTextOnly: true
+            ),
+            timeScale: TimeScaleOptions(
+                borderVisible: false,
+                timeVisible: true,
+                secondsVisible: false
+            ),
+            grid: GridOptions(
+                verticalLines: GridLineOptions(color: UIColor.black10.toHex),
+                horizontalLines: GridLineOptions(color: UIColor.black10.toHex)
+            )
         )
         chart.applyOptions(options: options)
+        
         series = chart.addLineSeries(options: nil)
+        selectedFormat = .custom(title: "SomeCurrency", sign: "", digitsAfterDot: 5)
     }
     
     func rangeData(range: Periods) -> [LineData]? {
@@ -65,8 +135,13 @@ class LightweightChartView: UIView {
             return nil
         }
         var rangedData: [LineData] = []
-        let startIndex = data.count - Int(range.timeInterval / DataProvider.shared.INTERVAL) - 1
-        let stride = Int((range.timeInterval / DataProvider.shared.INTERVAL) / 50)
+        let maximumXvaluesCount: Double = 120
+        let startIndex: Int = {
+            var index: Int = data.count - Int(range.timeInterval / DataProvider.shared.INTERVAL) - 1
+            if index < 0 { index = 0 }
+            return index
+        }()
+        let stride = Int((range.timeInterval / DataProvider.shared.INTERVAL) / maximumXvaluesCount)
         if stride > 0 {
             for i in startIndex..<data.count {
                 if i % stride == 0 {
@@ -77,6 +152,19 @@ class LightweightChartView: UIView {
             rangedData = Array(data[startIndex..<data.count])
         }
         return rangedData
+    }
+    
+    private func updateFormatter() {
+        let method: JavaScriptMethod<BarPrice>
+        switch selectedSource {
+        case .js:
+            method = .javaScript(selectedFormat.formatterString)
+        case .native:
+            method = .closure(selectedFormat.formatterClosure)
+        }
+        
+        let options = ChartOptions(localization: LocalizationOptions(priceFormatter: method))
+        chart.applyOptions(options: options)
     }
 }
 
