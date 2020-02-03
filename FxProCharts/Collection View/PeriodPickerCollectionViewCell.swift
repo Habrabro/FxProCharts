@@ -14,6 +14,7 @@ class PeriodPickerCollectionViewCell: UICollectionViewCell, Configurable {
     // MARK: Constants
     
     static let DEFAULT_CELL_SIZE = CGSize(width: 40, height: 40)
+    static let CELL_PADDING_HORIZONTAL = CGFloat(20)
     
     // MARK: Outlets
     
@@ -38,7 +39,8 @@ class PeriodPickerCollectionViewCell: UICollectionViewCell, Configurable {
         self.model = model
         
         titleLabel.text = model.title
-//        cellSize.width = titleLabel.frame.size.width + 10
+        titleLabel.layoutIfNeeded()
+        cellSize.width = titleLabel.frame.size.width + PeriodPickerCollectionViewCell.CELL_PADDING_HORIZONTAL
     }
     
     func setSize(to size: CGSize) {
